@@ -19,11 +19,20 @@
 .container{
     display: flex;
     border: 10px solid red;
-    min-height: 100vh;
-    flex-direction: column;  /*  main axis of the flow of the content => from top to bottom*/
+    height: 100vh;
+    flex-direction: column; 
+
+    /* column => main axis of the flow of the content => from top to bottom*/
     /*  default row
-        main axis of the flow of the content => from right to left
+        row => main axis of the flow of the content => from right to left
     */
+
+    flex-wrap: wrap;  
+    /* default => nowrap */
+    /* wrap if the width more than the container */
 }
 /* display flex => the width of the container 100% of the page */
 /* display: inline-flex; => the width of the container include the content only */
+.box{
+    width: 300px;
+}
