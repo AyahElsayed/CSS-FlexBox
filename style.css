@@ -17,8 +17,13 @@
 .box10{background-color: rgb(5, 59, 80);}
 
 .container{
-    display: inline-flex;
+    display: flex;
     border: 10px solid red;
+    min-height: 100vh;
+    flex-direction: column;  /*  main axis of the flow of the content => from top to bottom*/
+    /*  default row
+        main axis of the flow of the content => from right to left
+    */
 }
 /* display flex => the width of the container 100% of the page */
 /* display: inline-flex; => the width of the container include the content only */
