@@ -1,0 +1,24 @@
+.box{
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+    padding: 10px;
+}
+.box1{background-color: rosybrown;}
+.box2{background-color: rgb(160, 25, 25);}
+.box3{background-color: rgb(42, 145, 64);}
+.box4{background-color: rgb(31, 5, 5);}
+.box5{background-color: rgb(136, 43, 100);}
+.box6{background-color: rgb(5, 15, 7);}
+.box7{background-color: rgb(37, 2, 83);}
+.box8{background-color: rgb(88, 21, 21);}
+.box9{background-color: rgb(4, 156, 144);}
+.box10{background-color: rgb(5, 59, 80);}
+
+.container{
+    display: inline-flex;
+    border: 10px solid red;
+}
+/* display flex => the width of the container 100% of the page */
+/* display: inline-flex; => the width of the container include the content only */
