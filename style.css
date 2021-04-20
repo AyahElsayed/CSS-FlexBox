@@ -1,6 +1,6 @@
 .box{
     color: #fff;
-    font-size: 100px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
     padding: 10px;
@@ -19,33 +19,20 @@
 .container{
     display: flex;
     border: 10px solid red;
-    /* height: 100vh; */
-    /* flex-direction: column;  */
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    /* column => main axis of the flow of the content => from top to bottom*/
-    /*  default row
-        row => main axis of the flow of the content => from right to left
-    */
+/* justify-content => 
+        mean how are the items aligned on the main axis 
+        main axis => by default from left to right 
+        cross axis => by default from top to bottom
+    default value: flex-start
+ */
 
-    /* flex-wrap: wrap;   */
-    /* default => nowrap */
-    /* wrap if the width more than the container */
-}
-/* display flex => the width of the container 100% of the page */
-/* display: inline-flex; => the width of the container include the content only */
-.box{
-    /* width: 300px; */
-    flex: 1;
-    /* flex 1 => make the boxes fill all width if the container */
-}
-/* ==== order === */
-/* default row => sort boxes from left to right according to the number 
-    Highest in right , and lowest in left  (0 ,1, 2,...)
-    default order = 0
-*/
-.box3{
-    order: 3;
-}
-.box7{
-    order: 1;
-}
+ /* when change flex-direction: columns 
+        main axis => by default from top to bottom
+        cross axis => by default from left to right 
+  */
+
