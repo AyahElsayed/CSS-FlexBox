@@ -20,11 +20,13 @@
     display: flex;
     border: 10px solid red;
     height: 100vh;
-    align-content: stretch;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .box{
     width: 400px;
+}
+.box7{
+    align-self:flex-end;
 }
 /* justify-content => 
         mean how are the items aligned on the main axis 
@@ -51,3 +53,7 @@
     wirk with cross axis 
     default value:stretch
   */
+
+  /* align-self =>
+    applied to individual item and overwrite its value 
+   */
