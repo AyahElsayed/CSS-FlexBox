@@ -19,9 +19,28 @@
 .container{
     display: flex;
     border: 10px solid red;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    height: 100vh;
+    align-items:baseline;
+}
+.box1{
+    font-size: 10px;
+}
+.box2{
+    font-size: 50px;
+}
+.box3{
+    font-size: 20px;
+}
+.box4{
+    font-size: 77px;
+}
+.box5{
+    font-size: 60px;
+}
+.box7{
+    font-size: 25px;
 }
 
 /* justify-content => 
@@ -36,3 +55,10 @@
         cross axis => by default from left to right 
   */
 
+  /* align-items => 
+        mean how are the items aligned on the cross axis
+        default value:stretch
+
+        align-items:baseline; =>
+        make the text in all at the same line
+  */
