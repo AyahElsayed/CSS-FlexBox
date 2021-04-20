@@ -18,15 +18,15 @@
 
 .container{
     display: flex;
-    border: 10px solid red;
-    height: 100vh;
-    align-items: flex-start;
+    
 }
 .box{
-    width: 400px;
+    flex: 1;
 }
-.box7{
-    align-self:flex-end;
+.box2{
+    flex: 2;
+    /* as well as there is extra space 
+    this item have the double width  */
 }
 /* justify-content => 
         mean how are the items aligned on the main axis 
@@ -57,3 +57,8 @@
   /* align-self =>
     applied to individual item and overwrite its value 
    */
+
+   /* flex: 1 =>
+        when ther an extra space , boxes fill all the space and all have the same width
+        until other item take different no. of flex 
+    */
