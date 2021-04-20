@@ -20,13 +20,11 @@
     display: flex;
     
 }
-.box{
-    flex: 1;
+.box1{
+    flex: 10 5 400px; 
 }
 .box2{
-    flex: 2;
-    /* as well as there is extra space 
-    this item have the double width  */
+    
 }
 /* justify-content => 
         mean how are the items aligned on the main axis 
@@ -61,4 +59,16 @@
    /* flex: 1 =>
         when ther an extra space , boxes fill all the space and all have the same width
         until other item take different no. of flex 
+    flex: 2;
+    as well as there is extra space 
+    this item have the double width  
+
+    flex:1 ; === flex-grow: 1; & flex-shrink: 1;
+    flex: grow shrink basis
     */
+
+    /* flex-grow => 
+        when ther an extra space , how much extra should to take
+      flex-shrink =>
+        when ther isn't enough space ,  how much should i give up in proportion to the other one 
+     */
