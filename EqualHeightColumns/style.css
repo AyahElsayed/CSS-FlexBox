@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background: linear-gradient(260deg , #2376ae 0% ,#c16ecf 100%);
+    margin: 0;
+}
+.item.larg{
+    font-size: 40px;
+}
+.item.small{
+    font-size: 20px;
+}
+.item{
+    font-size: 30px;
+    background: rgba(255, 255, 255, .2);
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+/* Flex start here */
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex: 1 1 calc(33.33% - 20px);
+}
