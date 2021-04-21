@@ -10,7 +10,11 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="top">
+            <h1><a href="#"> what the flex box!?</a></h1>
+        </header>
         <nav class="flexNav">
+            <a href="#" class="toggleNav">Menu</a>
             <ul>
                 <li><a href="#">item 01</a></li>
                 <li><a href="#">item 02</a></li>
@@ -40,7 +44,34 @@
                 </li>
             </ul>
         </nav>
+        <section class="hero">
+            <img src="./image.jpg">
+        </section>
+        <section class="details">
+            <p>A simple video course to help you master flex box</p>
+            <p>A simple video course to help you master flex box</p>
+        </section>
+        <section class="signUp">
+            <form action="" class="signUp">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+                <input type="submit" placeholder="sign me up!">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; Wes Bos</p>
+        </footer>
     </div>
+    <!-- link for jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.toggleNav').on('click', function(){
+                $('.flexNav ul').toggleClass('open')
+                // $('.flexNav ul').slideToggle();
+            });
+        });
+    </script>
     
 </body>
 </html>

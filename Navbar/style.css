@@ -25,7 +25,24 @@ a:hover{
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px;
+}
+.toggleNav{
+    display: none;
+}
+img{
+    width: 100%;
+}
+input{
+    padding: 10px;
+    border: 0;
+}
+section , footer{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+
 }
 /* flex container */
 .flexNav ul{
@@ -58,5 +75,34 @@ a:hover{
     .flexNav li {
         flex:1 1 100%;
     }
-    
+    /* flex container */
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    /* flex item */
+    .wrapper > * {
+        order: 999;
+    }
+    .flexNav{
+        order: 1;
+    }
+    .toggleNav{
+        display: block;
+    }
+    .flexNav ul{
+        display: none;
+    }
+    .flexNav ul.open{
+        display: flex;
+    }
+    .top{
+        order: 2;
+    }
+    .details{
+        order: 3;
+    }
+    .signUp{
+        order: 4;
+    }
 }
